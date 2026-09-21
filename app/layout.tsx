@@ -6,6 +6,7 @@ import { ChartColumnBigIcon } from "lucide-react";
 import { ClerkProvider, Show, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import UserDropdown from "./user-dropdown";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -49,7 +50,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 </div>
             </Show>
             <Show when="signed-in">
-              <UserButton />
+              <UserDropdown />
             </Show>
             </div>
           </nav>
