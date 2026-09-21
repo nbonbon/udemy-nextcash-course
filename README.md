@@ -8,8 +8,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 `npm install`
 
 ###  Clerk Setup
-Create .env.local file at root of project
-Get contents from Clerk website NextCashCourse > Settings > Instance > API Keys > Quick Copy
+- Create .env.local file at root of project
+- Get contents from Clerk website NextCashCourse > Settings > Instance > API Keys > Quick Copy
 
 ## Running
 
