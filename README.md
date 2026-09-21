@@ -5,11 +5,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - Videos: https://v2x.udemy.com/course/nextjs-postgresql/
 
 ## Setup
-npm install
+`npm install`
 
 ###  Clerk Setup
 Create .env.local file at root of project
-Get contetns from Clerk website NextCashCourse > Settings > Instance > API Keys > Quick Copy
+Get contents from Clerk website NextCashCourse > Settings > Instance > API Keys > Quick Copy
 
 ## Running
 
