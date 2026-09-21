@@ -6,9 +6,9 @@ import { ChartColumnBigIcon } from "lucide-react";
 import { ClerkProvider, Show, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import UserDropdown from "./user-dropdown";
+import UserDropdownClient from "@/components/UserDropdownClient";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <ChartColumnBigIcon className="text-lime-500" /> NextCash
             </Link>
             <div>
-            <Show when="signed-out">
+              <Show when="signed-out">
                 <div className="flex items-center">
                   <SignInButton asChild>
                     <Button variant="link" className="text-white">
@@ -48,10 +48,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                     </Button>
                   </SignUpButton>
                 </div>
-            </Show>
-            <Show when="signed-in">
-              <UserDropdown />
-            </Show>
+              </Show>
+              <Show when="signed-in">
+                <UserDropdownClient />
+              </Show>
             </div>
           </nav>
           {children}

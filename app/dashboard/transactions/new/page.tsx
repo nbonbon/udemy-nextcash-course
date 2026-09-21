@@ -7,9 +7,14 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { auth } from "@clerk/nextjs/server";
 import Link from "next/link";
 
 export default async function NewTransactionPage() {
+  const { isAuthenticated, redirectToSignIn, userId } = await auth();
+
+  if (!isAuthenticated) return redirectToSignIn()
+
   return (
     <div className="max-w-screen-xl mx-auto py-10">
       <Breadcrumb>
