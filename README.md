@@ -1,8 +1,8 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 # Course Links
-Source: https://github.com/tomphill/nextcash-course
-Videos: https://v2x.udemy.com/course/nextjs-postgresql/
+- Source: https://github.com/tomphill/nextcash-course
+- Videos: https://v2x.udemy.com/course/nextjs-postgresql/
 
 ## Setup
 npm install
